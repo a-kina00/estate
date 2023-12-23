@@ -1,0 +1,29 @@
+@import url('./abstracts/constants.scss');
+
+@import url('./base/grid.scss');
+@import url('./base/button.scss');
+@import url('./base/dropdown.scss');
+@import url('./base/grid.scss');
+@import url('./base/icon.scss');
+@import url('./base/input.scss');
+@import url('./base/link.scss');
+@import url('./base/text.scss');
+@import url('./base/typography.scss');
+@import url('./base/line.scss');
+@import url('./base/page.scss');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+ // background-color: bisque;
+}

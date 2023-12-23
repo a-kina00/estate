@@ -1,0 +1,22 @@
+.link {
+    color: var(--color-secondary);
+    text-decoration: underline;
+
+    transition: all .15s linear;
+
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-additional);
+    }
+
+    &_disabled {
+        color: var(--color-grey-disabled-text);
+
+        cursor: default;
+
+        &:hover {
+            color: var(--color-grey-disabled-text);
+        }
+    }
+}

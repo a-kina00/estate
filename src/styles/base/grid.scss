@@ -1,0 +1,43 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &_end {
+        justify-content: end;
+    }
+
+    &_start {
+        justify-content: start;
+    }
+
+    &_nowrap {
+        flex-wrap: nowrap;
+    }
+
+    @for $i from 0 through 20 {
+        &_gap-#{$i} {
+            gap: #{$i * 4px};
+        }
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &_start {
+        align-items: start;
+    }
+
+    @for $i from 0 through 20 {
+        &_gap-#{$i} {
+            gap: #{$i * 4px};
+        }
+    }
+}
