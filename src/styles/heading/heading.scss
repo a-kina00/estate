@@ -1,0 +1,12 @@
+.heading {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/photos/mainBG.png');
+    background-size: cover;
+    background-position: 100% 70%;
+
+    &__title {
+        width: 80%;
+        text-align: center;
+    }
+}

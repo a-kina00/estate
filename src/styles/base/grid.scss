@@ -13,6 +13,14 @@
         justify-content: start;
     }
 
+    &_align-start {
+        align-items: flex-start;
+    }
+
+    &_between {
+        justify-content: space-between;
+    }
+
     &_nowrap {
         flex-wrap: nowrap;
     }
@@ -33,6 +41,10 @@
 
     &_start {
         align-items: start;
+    }
+
+    &_between {
+        justify-content: space-between;
     }
 
     @for $i from 0 through 20 {

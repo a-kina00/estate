@@ -1,0 +1,24 @@
+.search-menu {
+    position: relative;
+    width: 70%;
+    height: 20%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-primary-background);
+    overflow: hidden;
+
+    &__button {
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--color-primary);
+        border: none;
+        right: 0;
+        transition: all .2s ease;
+
+        &:active {
+            background-color: var(--color-secondary);
+            
+        }
+    }
+}

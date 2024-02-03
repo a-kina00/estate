@@ -1,0 +1,17 @@
+.icon {
+    &_default {
+        //TODO: переделать через степ
+        width: 16px;
+        height: 16px;
+    }
+
+    &_logo {
+        width: 135px;
+        height: 135px;
+    }
+
+    &_extra-large {
+        width: 76px;
+        height: 76px;
+    }
+}

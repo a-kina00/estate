@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import Trl from "../utils/trl"
 
 type Button = {
     text?: string
@@ -17,7 +18,7 @@ export default function Button({ text, buttonType='button', buttonClass, onClick
             disabled={disabled}
         >
             <span className="text text_label">
-                {text}
+                {text && Trl(text)}
             </span>
         </button>
     )

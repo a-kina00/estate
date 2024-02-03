@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import Button from "./Button"
+import Trl from "../utils/trl"
 
 type Input = {
     title?: string
@@ -23,17 +23,17 @@ export default function Input({ title, placeholder = '', inputClass, inputType =
                 <input
                     type={inputType}
                     className={clsx('input input__form', inputClass, disabled && 'input_disabled', !!error && 'input_error')}
-                    placeholder={placeholder}
+                    placeholder={Trl(placeholder)}
                     onChange={onChange}
                     disabled={disabled}
                 />
                 {showButton?.show &&
                     <button type='button' className="button input__button">
-                        {showButton.text}
+                        {showButton.text && Trl(showButton.text)}
                     </button>
                 }
             </form>
-            <span className="text text_warning-sub">{error}</span>
+            <span className="text text_warning-sub">{error && Trl(error)}</span>
         </div>
     )
 }

@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
-$step: 4px;
-
 .text {
     font-family: 'Montserrat', 'Arial';
     margin: 0px;
 
     &_light {
         color: var(--color-white);
+    }
+
+    &_uppercase {
+        text-transform: uppercase;
+    }
+
+    &_clickable {
+        cursor: pointer;
     }
 
     &_warning {
@@ -26,4 +32,37 @@ $step: 4px;
         font-weight: 700;
     }
 
+    &_assertive {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-additional);
+        text-shadow: 2px 2px 0 var(--color-secondary);
+
+        transform: translate(-2px, -2px);
+    }
+
+    &_bold {
+        font-weight: 600;
+    }
+
+    &_small {
+        font-size: 12px;
+    }
+
+    &_medium {
+        font-size: 16px;
+    }
+
+    &_large {
+        font-size: 24px;
+    }
+
+    &_large-2 {
+        font-size: 36px;
+    }
+
+    &_extra-large {
+        font-size: 64px;
+        text-shadow: 4px 4px 0 var(--color-secondary-dark);
+    }
 }
