@@ -19,7 +19,7 @@ console.log(dropDownState);
     return (
         <div className="col col_start col_gap-1">
             <h2 className={clsx("text text_label input__title", disabled && 'input__title_disabled', error && 'text_warning')}>{title}</h2>
-            <div className="input input__form drop-down" placeholder={placeholder} onClick={() => setDropDownState(!dropDownState)}>
+            <div className="input input__form drop-down" onClick={() => setDropDownState(!dropDownState)}>
                 {dropDownState && options.map(option => <div className="col">{option}</div>)}
             </div>
         </div>
